@@ -1,0 +1,12 @@
+{
+    "actorSpecification": 1,
+    "name": "policy-extractor",
+    "version": "1.0.0",
+    "buildTag": "latest",
+    "readme": "./README.md",
+    "input": "./input_schema.json",
+    "dockerfile": "./Dockerfile",
+    "environmentVariables": {
+        "APIFY_LOG_LEVEL": "DEBUG"
+    }
+}

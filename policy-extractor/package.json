@@ -1,0 +1,25 @@
+{
+    "name": "policy-extractor",
+    "version": "1.0.0",
+    "description": "Apify actor for extracting legal policies from websites",
+    "type": "module",
+    "dependencies": {
+        "apify": "^3.1.8",
+        "crawlee": "^3.0.0",
+        "cheerio": "^1.0.0-rc.12",
+        "playwright": "^1.39.0",
+        "typescript": "^5.0.0"
+    },
+    "devDependencies": {
+        "@apify/tsconfig": "^0.1.0",
+        "@types/node": "^20.0.0",
+        "ts-node": "^10.9.1"
+    },
+    "scripts": {
+        "start": "node dist/main.js",
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+}

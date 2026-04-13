@@ -1,0 +1,31 @@
+{
+    "__comment": "/actors/master-orchestrator/package.json",
+    "name": "master-orchestrator",
+    "version": "1.0.0",
+    "description": "Master Orchestrator Actor",
+    "type": "module",
+    "scripts": {
+        "start": "node dist/main.js",
+        "build": "rm -rf dist && tsc",
+        "test": "jest",
+        "develop": "cross-env NODE_ENV=development tsx src/main.ts",
+        "watch": "tsc --watch"
+    },
+    "dependencies": {
+        "apify": "^3.1.8",
+        "crawlee": "^3.12.2",
+        "got-scraping": "^4.0.8",
+        "playwright": "^1.50.1",
+        "typescript": "^5.7.3"
+    },
+    "devDependencies": {
+        "@types/node": "^20.17.16",
+        "cross-env": "^7.0.3",
+        "ts-node": "^10.9.2",
+        "tsconfig-paths": "^4.2.0",
+        "tsx": "^4.19.2"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}

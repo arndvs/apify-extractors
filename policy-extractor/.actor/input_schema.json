@@ -1,0 +1,45 @@
+{
+    "title": "Policy Extractor Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "url": {
+            "title": "Website URL",
+            "type": "string",
+            "description": "URL of the website to extract policies from",
+            "editor": "textfield"
+        },
+        "maxTimeout": {
+            "title": "Maximum Timeout",
+            "type": "integer",
+            "description": "Maximum time in seconds to wait for the page to load",
+            "default": 30,
+            "minimum": 1,
+            "maximum": 300,
+            "unit": "seconds"
+        },
+        "scrapingStrategy": {
+            "title": "Scraping Strategy",
+            "type": "string",
+            "description": "Strategy to use for scraping the website",
+            "default": "CHEERIO",
+            "enum": [
+                "BASIC_HTTP",
+                "GOT_SCRAPING",
+                "CHEERIO",
+                "PUPPETEER",
+                "PLAYWRIGHT",
+                "TEST_RUNNER"
+            ],
+            "enumTitles": [
+                "Basic HTTP",
+                "Got Scraping",
+                "Cheerio",
+                "Puppeteer",
+                "Playwright",
+                "Test Runner"
+            ]
+        }
+    },
+    "required": ["url"]
+}

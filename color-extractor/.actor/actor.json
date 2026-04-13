@@ -1,0 +1,13 @@
+{
+    "actorSpecification": 1,
+    "name": "screenshot-actor",
+    "title": "Fast Screenshot Capture",
+    "description": "High-performance webpage screenshot capture using Puppeteer. Optimized for speed and reliability.",
+    "version": "1.0",
+    "meta": {
+        "templateId": "ts-crawlee-puppeteer-chrome"
+    },
+    "environmentVariables": {
+        "MEMORY_MBYTES": "2048"
+    }
+}

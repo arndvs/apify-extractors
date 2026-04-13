@@ -1,0 +1,23 @@
+{
+    "title": "Jane App Scraper",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "domains": {
+            "title": "Jane App Domains",
+            "type": "array",
+            "description": "Array of Jane app domains to scrape",
+            "editor": "json",
+            "prefill": [
+                {
+                    "domain": "example.janeapp.com",
+                    "address": "jane-pod-cac1-32.janeapp.net",
+                    "type": "CNAME",
+                    "entryDate": "2024-08-28",
+                    "source": "rapiddns"
+                }
+            ]
+        }
+    },
+    "required": ["domains"]
+}

@@ -1,0 +1,19 @@
+{
+    "__comment": "/actors/master-orchestrator/dev-input.json",
+    "url": "https://example.com",
+    "extractors": {
+        "websiteContentCrawler": true,
+        "color": true,
+        "policy": true,
+        "contact": false,
+        "faq": false,
+        "product": false
+
+
+
+    },
+
+    "maxTimeout": 60,
+    "retryCount": 3
+
+}

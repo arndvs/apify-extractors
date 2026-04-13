@@ -1,0 +1,28 @@
+{
+    "name": "playwright-test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.ts",
+    "scripts": {
+        "start": "npm run start:dev",
+        "start:dev": "tsx src/main.ts",
+        "start:prod": "node dist/main.js",
+        "codegen": "tsx src/runCodegen.ts",
+        "build": "tsc",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "postinstall": "npx crawlee install-playwright-browsers"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@apify/eslint-config-ts": "^0.3.0",
+        "@apify/tsconfig": "^0.1.0",
+        "@playwright/test": "1.49.1",
+        "@types/uuid": "^9.0.4",
+        "apify": "^3.2.6",
+        "tsx": "^4.6.2",
+        "typescript": "^5.3.3",
+        "uuid": "^9.0.1"
+    }
+}

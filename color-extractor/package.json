@@ -1,0 +1,37 @@
+{
+    "name": "fast-screenshot-actor",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "High-performance webpage screenshot capture using Puppeteer",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "dependencies": {
+        "apify": "^3.2.6",
+        "canvas": "^3.1.0",
+        "colorthief": "^2.6.0",
+        "crawlee": "^3.11.5",
+        "openai": "^4.83.0",
+        "puppeteer": "*",
+        "sharp": "^0.33.5"
+    },
+    "devDependencies": {
+        "@apify/eslint-config-ts": "^0.3.0",
+        "@apify/tsconfig": "^0.1.0",
+        "@typescript-eslint/eslint-plugin": "^7.18.0",
+        "@typescript-eslint/parser": "^7.18.0",
+
+        "eslint": "^8.50.0",
+        "tsx": "^4.6.2",
+        "typescript": "^5.3.3"
+    },
+    "scripts": {
+        "start": "npm run start:dev",
+        "start:prod": "node dist/main.js",
+        "start:dev": "tsx src/main.ts",
+        "build": "tsc",
+        "test": "echo \"No tests specified\" && exit 0"
+    },
+    "author": "It's not you it's me",
+    "license": "ISC"
+}
